@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2b1818f5;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#about {
+    min-height: 100vh;
+    background-color: rgb(177, 163, 166);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: black;
+    font-size: 2rem;
+}
+#home {
+    min-height: 1px;
+   
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(90, 94, 141);
+    padding: 15px 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#navbar a:hover {
+    color: rgb(44, 174, 235);
+    border-bottom: 2px solid rgb(44, 0, 146);
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}
+
+#contact {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+
+#contact h1 {
+    font-size: 3rem;
+}
+
+span {
+    color: red;
+}
+
+/* Form */
+form {
+    background-color: rgb(177, 163, 166);
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+    max-width: 90%;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+input:focus,
+textarea:focus {
+    outline: solid 2px red;
+    border: 2px solid red;
+}
+
+ /*  Mobile Devices
+   (up to 767px)*/
+@media screen and (max-width: 767px) {
+
+    #navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        gap: 1px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    #navbar a {
+        font-size: 18px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    #about {
+        padding: 20px;
+        text-align: center;
+        min-height: auto;
+        padding: 40px 70px;
+    }
+
+    #about h1,
+    #contact h1 {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    #about p {
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 100%;
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
